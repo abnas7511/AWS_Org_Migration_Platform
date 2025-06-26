@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+boto3
+python-dotenv
+SQLAlchemy
+SQLAlchemy-Utils
+psycopg2
