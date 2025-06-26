@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Light mode styles - Purple-Blue theme */
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #f8fafc;
+  --card-gradient-from: rgba(72, 113, 182, 0.1);
+  --card-gradient-to: rgba(74, 172, 223, 0.1);
+  --card-border: rgba(70, 54, 141, 0.2);
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --accent-color: #46368d;
+  --accent-color-light: #4871b6;
+  --accent-color-lighter: #4aacdf;
+  --header-gradient: linear-gradient(25deg, #46368d, #46368d, #4871b6, #4aacdf);
+}
+
+/* Dark mode styles */
+.dark {
+  --background-primary: #0f172a;
+  --background-secondary: #1e293b;
+  --card-gradient-from: rgba(30, 41, 59, 0.8);
+  --card-gradient-to: rgba(15, 23, 42, 0.8);
+  --card-border: rgba(51, 65, 85, 0.5);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --accent-color: #60a5fa;
+  --accent-color-light: #3b82f6;
+  --accent-color-lighter: #2563eb;
+  --header-gradient: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+}
+
+/* Apply theme variables */
+.bg-theme-primary {
+  background-color: var(--background-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--background-secondary);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.accent-theme {
+  color: var(--accent-color);
+}
+
+/* Card styling */
+.card-theme {
+  background-image: linear-gradient(to right, var(--card-gradient-from), var(--card-gradient-to));
+  border-color: var(--card-border);
+  color: var(--text-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ab*/
